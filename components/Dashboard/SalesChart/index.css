@@ -1,0 +1,14 @@
+.sales-chart {
+  flex: 2;
+  background: #1f1f1f;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  height: 350px;
+}
+
+.chart-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,75 @@
+.recent-orders {
+    margin-top: 20px;
+    background: #1f1f1f;
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.orders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.orders-header h2 {
+    font-size: 22px;
+}
+
+.view-all-btn {
+    background: #ff8c00;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.view-all-btn:hover {
+    background: #e67e00;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders-table th {
+    text-align: left;
+    padding: 14px;
+    color: #ff8c00;
+    border-bottom: 1px solid #333;
+}
+
+.orders-table td {
+    padding: 14px;
+    border-bottom: 1px solid #333;
+}
+
+.orders-table tr:last-child td {
+    border-bottom: none;
+}
+
+.status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.completed {
+    background: rgba(0, 255, 0, 0.15);
+    color: #4caf50;
+}
+
+.pending {
+    background: rgba(255, 193, 7, 0.15);
+    color: #ffc107;
+}
+
+.cancelled {
+    background: rgba(255, 0, 0, 0.15);
+    color: #f44336;
+}
