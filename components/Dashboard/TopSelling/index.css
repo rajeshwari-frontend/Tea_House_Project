@@ -32,3 +32,12 @@
   color: #ff8c00;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+
+  .top-selling {
+    width: 100%;
+    min-height: auto;
+    padding: 15px;
+  }
+
+}

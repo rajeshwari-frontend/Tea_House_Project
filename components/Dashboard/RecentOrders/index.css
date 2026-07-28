@@ -73,3 +73,31 @@
     background: rgba(255, 0, 0, 0.15);
     color: #f44336;
 }
+.orders-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+@media (max-width: 768px) {
+
+  .orders-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .orders-table {
+    min-width: 800px;
+  }
+
+  .recent-orders {
+    padding: 15px;
+  }
+
+  .recent-orders h2 {
+    font-size: 22px;
+  }
+
+}

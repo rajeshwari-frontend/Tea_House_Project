@@ -47,3 +47,14 @@
     color:#ff8c00;
     font-size:13px;
 }
+@media (max-width: 768px) {
+
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .dashboard-card {
+    width: 100%;
+  }
+
+}

@@ -45,12 +45,13 @@ const recentOrders = [
 
 const RecentOrders = () => {
   return (
+    
     <div className="recent-orders">
       <div className="orders-header">
         <h2>Recent Orders</h2>
         
       </div>
-
+<div className="orders-table-wrapper">
       <table className="orders-table">
         <thead>
           <tr>
@@ -79,7 +80,7 @@ const RecentOrders = () => {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table></div>
     </div>
   );
 };
