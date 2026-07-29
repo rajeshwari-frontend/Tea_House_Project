@@ -59,12 +59,20 @@
     font-weight: 500;
     color: #333;
 }
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
 @media (max-width: 768px) {
 
   .navbar {
     padding: 15px;
   }
-
+  .hamburger {
+    display: block;
+  }
   .navbar-right {
     width: 100%;
     gap: 10px;

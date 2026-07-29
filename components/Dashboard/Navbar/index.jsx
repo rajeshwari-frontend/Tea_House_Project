@@ -1,14 +1,22 @@
+import { FiMenu } from "react-icons/fi";
 import { FiSearch } from "react-icons/fi";
 import { FaRegUserCircle } from "react-icons/fa";
+
+
 import "./index.css";
 
-const Navbar = () => {
+const Navbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   return (
     <div className="navbar">
 
 
       <div className="navbar-right">
-
+<div
+      className="hamburger"
+      onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+    >
+      <FiMenu />
+    </div>
         <div className="search-box">
           <FiSearch className="search-icon" />
 

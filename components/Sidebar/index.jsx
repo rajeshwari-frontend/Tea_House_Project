@@ -7,6 +7,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { HiOutlineUsers } from "react-icons/hi";
 import { IoSettingsOutline } from "react-icons/io5";
 import { FiLogOut } from "react-icons/fi";
+import {FiX} from "react-icons/fi";
 import "./index.css";
 
 const menuItems = [
@@ -47,10 +48,19 @@ const menuItems = [
   },
 ];
 
-const Sidebar = () => {
+const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   return (
-    <div className="sidebar">
-      <div>
+    <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
+
+  <div className="sidebar-header">
+    <FiX
+      className="close-icon"
+      onClick={() => setIsSidebarOpen(false)}
+    />
+  </div>
+
+  <div></div>
+    <div>
         <div className="logo-section">
           <div className="logo-icon">
             <GiTeapot className="tea-icon" />

@@ -5,18 +5,24 @@ import TopSelling from "./TopSelling";
 import RecentOrders from "./RecentOrders";
 import "./index.css";
 
-const Dashboard = () => {
+const Dashboard = ({ isSidebarOpen, setIsSidebarOpen }) => {
   return (
     <div className="dashboard">
-      <Navbar />
-<DashboardCards />
 
-<div className="dashboard-middle">
-  <SalesChart />
-  <TopSelling />
-</div>
+      <Navbar
+        isSidebarOpen={isSidebarOpen}
+        setIsSidebarOpen={setIsSidebarOpen}
+      />
 
-<RecentOrders />
+      <DashboardCards />
+
+      <div className="dashboard-middle">
+        <SalesChart />
+        <TopSelling />
+      </div>
+
+      <RecentOrders />
+
     </div>
   );
 };
