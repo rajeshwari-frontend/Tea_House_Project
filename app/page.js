@@ -1,5 +1,10 @@
-"use client";
+ import { redirect } from "next/navigation";
 
+export default function Home() {
+  redirect("/dashboard");
+}
+
+/*  "use client";
 import { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Dashboard from "../components/Dashboard";
@@ -23,4 +28,4 @@ export default function Home() {
 
     </main>
   );
-}
+} */

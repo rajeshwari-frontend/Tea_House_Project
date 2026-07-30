@@ -7,7 +7,8 @@ import { MdOutlineMail } from "react-icons/md";
 import { HiOutlineUsers } from "react-icons/hi";
 import { IoSettingsOutline } from "react-icons/io5";
 import { FiLogOut } from "react-icons/fi";
-import {FiX} from "react-icons/fi";
+import { FiX } from "react-icons/fi";
+import Link from "next/link";
 import "./index.css";
 
 const menuItems = [
@@ -15,52 +16,57 @@ const menuItems = [
     id: 1,
     icon: <MdDashboard />,
     title: "Dashboard",
+    path: "/dashboard",
+
   },
   {
     id: 2,
     icon: <FiShoppingBag />,
     title: "Orders",
+    path: "/dashboard/orders",  
   },
   {
     id: 3,
     icon: <LuCoffee />,
     title: "Menu Items",
+    path: "/dashboard/menu-items",
   },
   {
     id: 4,
     icon: <MdGridView />,
     title: "Categories",
+    path: "/dashboard/categories",
   },
   {
     id: 5,
     icon: <MdOutlineMail />,
     title: "Messages",
+    path: "/dashboard/messages",
   },
   {
     id: 6,
     icon: <HiOutlineUsers />,
     title: "Subscribers",
+    path: "/dashboard/subscribers",
   },
   {
     id: 7,
     icon: <IoSettingsOutline />,
     title: "Settings",
+    path: "/dashboard/settings",
   },
 ];
 
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   return (
     <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
-
-  <div className="sidebar-header">
-    <FiX
-      className="close-icon"
-      onClick={() => setIsSidebarOpen(false)}
-    />
-  </div>
-
-  <div></div>
-    <div>
+      <div className="sidebar-header">
+  <FiX
+    className="close-icon"
+    onClick={() => setIsSidebarOpen(false)}
+  />
+</div>
+      <div>
         <div className="logo-section">
           <div className="logo-icon">
             <GiTeapot className="tea-icon" />
@@ -73,18 +79,22 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
         </div>
 
         <div className="menu-section">
-          {menuItems.map((item) => (
-            <div className="menu-item" key={item.id}>
-              <span className="menu-icon">
-                {item.icon}
-              </span>
+  {menuItems.map((item) => (
+    <Link
+      href={item.path}
+      className="menu-item"
+      key={item.id}
+    >
+      <span className="menu-icon">
+        {item.icon}
+      </span>
 
-              <span className="menu-title">
-                {item.title}
-              </span>
-            </div>
-          ))}
-        </div>
+      <span className="menu-title">
+        {item.title}
+      </span>
+    </Link>
+  ))}
+</div>
       </div>
 
       <div className="bottom-section">

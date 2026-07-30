@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
+
 import DashboardCards from "./DashboardCards";
 import SalesChart from "./SalesChart";
 import TopSelling from "./TopSelling";
@@ -9,19 +9,16 @@ const Dashboard = ({ isSidebarOpen, setIsSidebarOpen }) => {
   return (
     <div className="dashboard">
 
-      <Navbar
-        isSidebarOpen={isSidebarOpen}
-        setIsSidebarOpen={setIsSidebarOpen}
-      />
+      
 
       <DashboardCards />
-
-      <div className="dashboard-middle">
+<div className="dashboard-middle">
         <SalesChart />
         <TopSelling />
       </div>
 
-      <RecentOrders />
+     
+  <RecentOrders /> 
 
     </div>
   );

@@ -4,8 +4,9 @@
     color: white;
     border-radius: 12px;
     padding: 20px;
+    width: 100%;
+    overflow: hidden;
 }
-
 .orders-header {
     display: flex;
     justify-content: space-between;
@@ -73,27 +74,33 @@
     background: rgba(255, 0, 0, 0.15);
     color: #f44336;
 }
+
 .orders-table-wrapper {
   width: 100%;
+  max-width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
-
 .orders-table {
   width: 100%;
   border-collapse: collapse;
 }
 @media (max-width: 768px) {
 
+  .recent-orders {
+    padding: 15px;
+    width: 100%;
+    overflow: hidden;
+  }
+
   .orders-table-wrapper {
+    width: 100%;
+    max-width: 100%;
     overflow-x: auto;
   }
 
   .orders-table {
     min-width: 800px;
-  }
-
-  .recent-orders {
-    padding: 15px;
   }
 
   .recent-orders h2 {
