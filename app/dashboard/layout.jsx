@@ -14,10 +14,10 @@ export default function DashboardLayout({ children }) {
     setIsSidebarOpen={setIsSidebarOpen}
   />
  <div className="dashboard-content">
-    <Navbar
-      isSidebarOpen={isSidebarOpen}
-      setIsSidebarOpen={setIsSidebarOpen}
-    />
+     <Navbar
+    isSidebarOpen={isSidebarOpen}
+    setIsSidebarOpen={setIsSidebarOpen}
+  />
     {children}
     </div>
   

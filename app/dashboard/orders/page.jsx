@@ -1,5 +1,5 @@
-export default function Orders() {
-  return (
-    <h1>Orders Page</h1>
-  );
+import Orders from "@/components/Orders";
+
+export default function OrdersPage() {
+  return <Orders />;
 }
