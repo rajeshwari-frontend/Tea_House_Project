@@ -57,11 +57,19 @@ const orders = [
 
 const Orders = () => {
     const [searchTerm, setSearchTerm] = useState("");
-    const filteredOrders = orders.filter((order) =>
-  order.customer.toLowerCase().includes(searchTerm.toLowerCase()) ||
-  order.id.toLowerCase().includes(searchTerm.toLowerCase()) ||
-  order.items.toLowerCase().includes(searchTerm.toLowerCase())
-);
+    const [statusFilter, setStatusFilter] = useState("All Status");
+    const filteredOrders = orders.filter((order) => {
+  const matchesSearch =
+    order.customer.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    order.id.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    order.items.toLowerCase().includes(searchTerm.toLowerCase());
+
+  const matchesStatus =
+    statusFilter === "All Status" ||
+    order.status === statusFilter;
+
+  return matchesSearch && matchesStatus;
+});
   return (
     <div className="orders-page">
 
@@ -81,8 +89,11 @@ const Orders = () => {
   value={searchTerm}
   onChange={(e) => setSearchTerm(e.target.value)}
 />
-
-        <select className="status-filter">
+<select
+  className="status-filter"
+  value={statusFilter}
+  onChange={(e) => setStatusFilter(e.target.value)}
+>
           <option>All Status</option>
           <option>Completed</option>
           <option>Pending</option>
