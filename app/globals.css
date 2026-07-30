@@ -53,9 +53,13 @@ a {
   min-width: 0;
   box-sizing: border-box;
 }
-@media (max-width: 768px) {
+
+  @media (max-width: 768px) {
   .dashboard-content {
     margin-left: 0;
-    padding: 15px;
+    width: 100%;
+    min-width: 0;
+    padding: 16px;   /* or 20px if you want more space */
   }
 }
+
