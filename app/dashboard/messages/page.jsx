@@ -1,3 +1,5 @@
-export default function MenuItems() {
-  return <h1>Message page</h1>;
+import Messages from "@/components/Messages";
+
+export default function MenuItemsPage() {
+  return <Messages />;
 }
