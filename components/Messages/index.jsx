@@ -36,6 +36,7 @@ const messages = [
 
 const Messages = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedMessage, setSelectedMessage] = useState(null);
 
   const filteredMessages = messages.filter(
     (item) =>
@@ -71,11 +72,49 @@ const Messages = () => {
             <div className="card-footer">
               <span>{item.date}</span>
 
-              <button className="view-btn">View</button>
+              <button
+  className="view-btn"
+  onClick={() => setSelectedMessage(item)}
+>
+  View
+</button>
             </div>
           </div>
         ))}
       </div>
+      {selectedMessage && (
+        <div className="modal-overlay">
+          <div className="modal">
+            <h2>Message Details</h2>
+
+            <p>
+              <strong>Name:</strong> {selectedMessage.name}
+            </p>
+
+            <p>
+              <strong>Email:</strong> {selectedMessage.email}
+            </p>
+
+            <p>
+              <strong>Date:</strong> {selectedMessage.date}
+            </p>
+
+            <p>
+              <strong>Message:</strong>
+            </p>
+
+            <p>{selectedMessage.message}</p>
+
+            <button
+              className="close-btn"
+              onClick={() => setSelectedMessage(null)}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+
     </div>
   );
 };
