@@ -1,3 +1,5 @@
-export default function MenuItems() {
-  return <h1>subscriber Page</h1>;
+import Subscribers from "@/components/Subscribers";
+
+export default function MenuItemsPage() {
+  return <Subscribers/>;
 }
