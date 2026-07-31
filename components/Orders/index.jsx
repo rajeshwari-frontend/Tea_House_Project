@@ -18,7 +18,7 @@ const orders = [
     items: "Lemon Tea, Green Tea",
     amount: "₹250",
     status: "Pending",
-    date: "24 Jul 2026",
+    date: "21 Jul 2026",
   },
   {
     id: "TH1254",
@@ -34,7 +34,7 @@ const orders = [
     items: "Masala Chai, Ginger Tea",
     amount: "₹320",
     status: "Completed",
-    date: "24 Jul 2026",
+    date: "30 Jul 2026",
   },
   {
     id: "TH1252",
@@ -42,7 +42,7 @@ const orders = [
     items: "Masala Chai, Ginger Tea",
     amount: "₹320",
     status: "Completed",
-    date: "24 Jul 2026",
+    date: "30 Jul 2026",
   },
   {
     id: "TH1251",
@@ -58,6 +58,7 @@ const orders = [
 const Orders = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [statusFilter, setStatusFilter] = useState("All Status");
+    
     const filteredOrders = orders.filter((order) => {
   const matchesSearch =
     order.customer.toLowerCase().includes(searchTerm.toLowerCase()) ||

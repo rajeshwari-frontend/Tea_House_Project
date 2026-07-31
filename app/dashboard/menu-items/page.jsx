@@ -1,3 +1,5 @@
-export default function MenuItems() {
-  return <h1>Menu Items Page</h1>;
+import MenuItems from "@/components/MenuItems";
+
+export default function MenuItemsPage() {
+  return <MenuItems />;
 }

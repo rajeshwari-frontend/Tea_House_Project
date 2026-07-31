@@ -1,0 +1,65 @@
+.menu-table-container {
+  background-color: #1f1f1f;
+  border-radius: 15px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.menu-table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+}
+
+.menu-table th {
+  color: #f59e0b;
+  text-align: left;
+  padding: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.menu-table td {
+  color: white;
+  padding: 15px;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.menu-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Status */
+
+.status {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.available {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
+
+.out-of-stock {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+/* Button */
+
+.edit-btn {
+  background: #f59e0b;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-btn:hover {
+  background: #d97706;
+}

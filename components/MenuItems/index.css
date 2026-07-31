@@ -1,0 +1,33 @@
+.menu-page {
+  padding: 20px;
+}
+
+.menu-header {
+  margin-bottom: 20px;
+}
+
+.menu-header h1 {
+  font-size: 42px;
+  font-weight: bold;
+  color: #111827;
+}
+
+.menu-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.search-input {
+  width: 350px;
+  padding: 12px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-input:focus {
+  border-color: #f59e0b;
+}
