@@ -1,3 +1,5 @@
-export default function MenuItems() {
-  return <h1>Setting Page</h1>;
+import Settings from "@/components/Settings";
+
+export default function MenuItemsPage() {
+  return <Settings/>;
 }
