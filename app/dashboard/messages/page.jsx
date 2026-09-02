@@ -1,4 +1,4 @@
-import Messages from "@/components/Messages";
+import Messages from "@/components/AdminComponent/Messages";
 
 export default function MenuItemsPage() {
   return <Messages />;

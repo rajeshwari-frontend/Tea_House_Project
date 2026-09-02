@@ -1,0 +1,45 @@
+.contact{
+    background:#111;
+    color:white;
+    padding:70px 80px;
+}
+
+.contact-title{
+    text-align:center;
+    color:orange;
+    font-size:48px;
+    margin-bottom:50px;
+}
+
+.contact-container{
+    display:flex;
+    justify-content:center;
+    gap:120px;
+    align-items:flex-start;
+}
+
+.contact-left,
+.contact-right{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-left p,
+.contact-right p{
+    font-size:22px;
+}
+
+.contact-right h3{
+    color:orange;
+    margin-bottom:10px;
+}
+@media screen and (max-width:768px){
+
+  .contact-container{
+    flex-direction:column;
+    gap:30px;
+    text-align:center;
+  }
+
+}

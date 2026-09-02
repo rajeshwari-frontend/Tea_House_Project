@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./index.css";
 
 const MenuTable = ({menuItems}) => {
@@ -16,7 +17,11 @@ const MenuTable = ({menuItems}) => {
     <tbody>
       {menuItems.map(item => (
         <tr key={item.id}>
-          <td>{item.name}</td>
+          <td>
+  <Link href={`/dashboard/menu-items/${item.id}`}>
+    {item.name}
+  </Link>
+</td>
 
           <td>{item.price}</td>
 

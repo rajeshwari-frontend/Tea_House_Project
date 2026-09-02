@@ -1,4 +1,4 @@
-import MenuItems from "@/components/MenuItems";
+import MenuItems from "@/components/AdminComponent/MenuItems";
 
 export default function MenuItemsPage() {
   return <MenuItems />;
