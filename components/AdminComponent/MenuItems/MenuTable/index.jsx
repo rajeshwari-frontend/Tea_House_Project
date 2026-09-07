@@ -1,7 +1,7 @@
-import Link from "next/link";
+
 import "./index.css";
 
-const MenuTable = ({menuItems}) => {
+const MenuTable = ({ menuItems, onEdit, onDelete }) => {
   return (
     <div className="menu-table-container">
   <table className="menu-table">
@@ -18,9 +18,9 @@ const MenuTable = ({menuItems}) => {
       {menuItems.map(item => (
         <tr key={item.id}>
           <td>
-  <Link href={`/dashboard/menu-items/${item.id}`}>
+
     {item.name}
-  </Link>
+ 
 </td>
 
           <td>{item.price}</td>
@@ -36,9 +36,15 @@ const MenuTable = ({menuItems}) => {
           </td>
 
           <td>
-            <button className="edit-btn">
+            <button className="edit-btn" onClick={() => onEdit(item)}>
               Edit
             </button>
+            <button
+    className="delete-btn"
+    onClick={() => onDelete(item.id)}
+  >
+    Delete
+  </button>
           </td>
         </tr>
       ))}

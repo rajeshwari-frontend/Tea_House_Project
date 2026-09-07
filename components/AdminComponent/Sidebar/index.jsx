@@ -16,44 +16,44 @@ const menuItems = [
     id: 1,
     icon: <MdDashboard />,
     title: "Dashboard",
-    path: "/dashboard",
+    path: "/admin",
 
   },
   {
     id: 2,
     icon: <FiShoppingBag />,
     title: "Orders",
-    path: "/dashboard/orders",  
+    path: "/admin/orders",  
   },
   {
     id: 3,
     icon: <LuCoffee />,
     title: "Menu Items",
-    path: "/dashboard/menu-items",
+    path: "/admin/menu-items",
   },
   {
     id: 4,
     icon: <MdGridView />,
     title: "Categories",
-    path: "/dashboard/categories",
+    path: "/admin/categories",
   },
   {
     id: 5,
     icon: <MdOutlineMail />,
     title: "Messages",
-    path: "/dashboard/messages",
+    path: "/admin/messages",
   },
   {
     id: 6,
     icon: <HiOutlineUsers />,
     title: "Subscribers",
-    path: "/dashboard/subscribers",
+    path: "/admin/subscribers",
   },
   {
     id: 7,
     icon: <IoSettingsOutline />,
     title: "Settings",
-    path: "/dashboard/settings",
+    path: "/admin/settings",
   },
 ];
 

@@ -2,9 +2,27 @@
   padding: 20px;
 }
 
+
+
 .menu-header {
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
 }
+
+.add-menu-btn {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
 
 .menu-header h1 {
   font-size: 42px;
@@ -30,4 +48,65 @@
 
 .search-input:focus {
   border-color: #f59e0b;
+}
+.add-menu-form {
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  border: 1px solid #f59e0b;
+}
+
+.add-menu-form h2 {
+  color: white;
+  font-size: 22px;
+  margin: 0 0 18px;
+}
+
+.form-fields {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.form-fields input,
+.form-fields select {
+  flex: 1;
+  min-width: 180px;
+  padding: 11px 12px;
+  border-radius: 7px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-fields input:focus,
+.form-fields select:focus {
+  border-color: #f59e0b;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.save-btn,
+.cancel-btn {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.save-btn {
+  background: #f59e0b;
+  color: white;
+}
+
+.cancel-btn {
+  background: #555;
+  color: white;
 }

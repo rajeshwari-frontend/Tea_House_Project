@@ -15,8 +15,8 @@ function Contact() {
 
     <div className="contact-right">
       <h3>🕒 Opening Hours</h3>
-      <p>Morning : 8:00 AM – 10:00 AM</p>
-      <p>Evening : 4:00 PM – 10:00 PM</p>
+      <p>Morning : 5:00 AM – 10:00 PM</p>
+   
     </div>
   </div>
 </section>

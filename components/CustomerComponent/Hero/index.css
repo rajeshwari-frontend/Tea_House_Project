@@ -1,11 +1,14 @@
 .hero {
-    display:flex;
-  justify-content: space-between;
+  display: flex;
   align-items: center;
-  padding: 60px;
-  scroll-margin-top: 80px;
+  justify-content: space-between;
+  padding: 60px 72px;
+  gap: 50px;
 }
 
+.hero-content {
+  flex: 1;
+}
 
 .hero-content h1 {
   font-size: 60px;
@@ -15,13 +18,12 @@
 .hero-content p {
   margin: 20px 0;
   font-size: 20px;
-  color:grey;
-
+  color: grey;
 }
 
 .hero-btn {
-  background-color:orange;
-  color:white;
+  background-color: orange;
+  color: white;
   border: none;
   padding: 15px 30px;
   border-radius: 8px;
@@ -29,8 +31,13 @@
   font-size: 18px;
 }
 
+.hero-image {
+  flex: 1;
+}
+
 .hero-image img {
-  width: 550px;
+  width: 100%;
+  max-width: 550px;
   border-radius: 20px;
 }
 @media screen and (max-width:768px){
