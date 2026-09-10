@@ -1,13 +1,18 @@
 import "./index.css";
 
-export default function LoginForm() {
+export default function LoginForm({ onLogin }) {
   return (
     <div className="login-container">
       <div className="login-box">
         <h1>☕ Tea House</h1>
         <h2>Admin Login</h2>
 
-        <form>
+       <form
+  onSubmit={(e) => {
+    e.preventDefault();
+    onLogin();
+  }}
+>
           <div className="input-group">
             <label>Email</label>
             <input

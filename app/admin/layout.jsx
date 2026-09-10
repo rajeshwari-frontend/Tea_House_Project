@@ -13,7 +13,7 @@ export default function DashboardLayout({ children }) {
   const pathname = usePathname();
   
 if (!isLoggedIn) {
-  return <LoginForm />;
+ return <LoginForm onLogin={() => setIsLoggedIn(true)} />;
 }
   return (
     <main className="dashboard-layout">
