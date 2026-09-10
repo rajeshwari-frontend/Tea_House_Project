@@ -17,13 +17,10 @@ if (!isLoggedIn) {
 }
   return (
     <main className="dashboard-layout">
-
-     
       <Sidebar
         isSidebarOpen={isSidebarOpen}
         setIsSidebarOpen={setIsSidebarOpen}
       />
-
       <div className="dashboard-content">
         {pathname === "/admin" && (
           <Navbar
@@ -31,8 +28,6 @@ if (!isLoggedIn) {
             setIsSidebarOpen={setIsSidebarOpen}
           />
         )}
-
-        
         {children}
 
       </div>

@@ -110,3 +110,116 @@
   background: #555;
   color: white;
 }
+.dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog-box {
+  width: 420px;
+  max-width: 90%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.dialog-box h2 {
+  margin: 0 0 24px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+}
+
+.dialog-box p {
+  margin: 0 0 24px;
+  color: #666;
+  font-size: 15px;
+}
+
+.dialog-box .form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.dialog-box .form-fields input,
+.dialog-box .form-fields select {
+  width: 100%;
+  height: 44px;
+  padding: 0 13px;
+  border: 1px solid #d5d5d5;
+  border-radius: 7px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.dialog-box .form-fields input:focus,
+.dialog-box .form-fields select:focus {
+  border-color: #ff9800;
+  box-shadow: 0 0 0 2px rgba(255, 152, 0, 0.12);
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.dialog-actions button {
+  min-width: 90px;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dialog-actions .cancel-btn {
+  background: #5b5b5b;
+  color: white;
+}
+
+.dialog-actions .save-btn {
+  background: #ff9800;
+  color: white;
+}
+.dialog-box .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.dialog-box .form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.dialog-box .form-group input,
+.dialog-box .form-group select {
+  width: 100%;
+  height: 46px !important;
+  min-height: 46px;
+  padding: 0 14px;
+  border: 1px solid #d5d5d5;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+  outline: none;
+  background: #fff;
+}
+
+.dialog-box .form-group input:focus,
+.dialog-box .form-group select:focus {
+  border-color: #ff9800;
+  box-shadow: 0 0 0 2px rgba(255, 152, 0, 0.12);
+}
