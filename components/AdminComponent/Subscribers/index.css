@@ -39,7 +39,7 @@
 }
 
 .subscriber-card {
-  background: #1f1f1f;
+  background:white;
   border: 1px solid #f59e0b;
   border-radius: 12px;
   padding: 22px;
@@ -53,21 +53,21 @@
 
 
 .subscriber-card h3 {
-  color: #f59e0b;
+  color:orange;
   font-size: 22px;
   margin-bottom: 18px;
   word-break: break-word;
 }
 
 .subscriber-info p {
-  color: #e5e7eb;
+  color:black;
   font-size: 16px;
   margin-bottom: 14px;
   line-height: 1.5;
 }
 
 .subscriber-info strong {
-  color: #ffffff;
+  color: black;
 }
 
 
