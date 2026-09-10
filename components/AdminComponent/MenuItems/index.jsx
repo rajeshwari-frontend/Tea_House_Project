@@ -25,6 +25,16 @@ const [formData, setFormData] = useState({
   item.name.toLowerCase().includes(searchTerm.toLowerCase())
 );
 const handleSave = () => {
+  if (formData.name.trim() === "") {
+  toast.error("Please enter tea name!");
+  return;
+  
+}
+if (formData.price.trim() === "") {
+    toast.error("Please enter price!");
+    return;
+  }
+
   if (editItemId !== null) {
   
     const updatedMenuItems = menuItemsList.map((item) =>
