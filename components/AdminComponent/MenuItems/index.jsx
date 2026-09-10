@@ -25,7 +25,7 @@ const [formData, setFormData] = useState({
 );
 const handleSave = () => {
   if (editItemId !== null) {
-    // Update existing item
+  
     const updatedMenuItems = menuItemsList.map((item) =>
       item.id === editItemId
         ? {
