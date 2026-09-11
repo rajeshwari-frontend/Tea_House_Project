@@ -53,3 +53,9 @@
   background: rgba(255,0,0,.15);
   color: #f44336;
 }
+@media (max-width: 768px) {
+  .orders-table-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
