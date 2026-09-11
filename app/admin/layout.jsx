@@ -10,6 +10,7 @@ import LoginForm from "@/components/login";
 export default function DashboardLayout({ children }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const pathname = usePathname();
 
   
 if (!isLoggedIn) {
@@ -23,10 +24,20 @@ if (!isLoggedIn) {
       />
       <div className="dashboard-content">
         
-          <Navbar
-            isSidebarOpen={isSidebarOpen}
-            setIsSidebarOpen={setIsSidebarOpen}
-          />
+          {pathname === "/admin" && (
+  <Navbar
+    isSidebarOpen={isSidebarOpen}
+    setIsSidebarOpen={setIsSidebarOpen}
+  />
+)}
+{pathname !== "/admin" && (
+  <button
+    className="mobile-menu-btn"
+    onClick={() => setIsSidebarOpen(true)}
+  >
+    ☰
+  </button>
+)}
         
         {children}
 
